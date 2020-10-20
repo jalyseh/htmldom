@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  
+<!-- When a web page is loaded, the browser creates a Document Object Model of the page.
+
+The DOM defines a standard for accessing documents:
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface 
+that allows programs and scripts to dynamically access and update the content, 
+structure, and style of a document."
+
+The HTML DOM model is constructed as a tree of Objects.
+The HTML DOM is a standard object model and programming interface for HTML. It defines:
+
+The HTML elements as objects
+The properties of all HTML elements
+The methods to access all HTML elements
+The events for all HTML elements-->
+
+<h3>Topic 1: Methods</h3>
+<!-- // getElementById is a method, while innerHTML is a property. -->
+
+<h2>Dis my page</h2>
+
+<p id="demo"></p>
+<br>
+<h3>Topic 2: Elements</h3>
+<!-- // how to find and access HTML elements in an HTML page. -->
+<!-- Find by ID -->
+<h2>Finding HTML Elements by Id</h2>
+
+<p>This example demonstrates the getElementsById method.</p>
+
+<p id="demo2"></p>
+
+<!-- Find by Tag -->
+
+<h2>Finding HTML Elements by Tag Name</h2>
+
+<div id="main">
+  <p>Tag name!</p>
+  <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+  </div>
+
+<p id="demo3"></p>
+
+<br>
+<h3>TOPIC 3: Animations</h3>
+<p><button onclick="myMove()">ANIMATE!!!!</button></p> 
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<h3>TOPIC 4: Events</h3>
+<!-- when a user clicks on an element, add JavaScript code to an HTML event attribute: -->
+  
+ <!-- 1 -->
+<h1 onclick="this.innerHTML='This is an event!'">Click here!</h1>
+<!-- 2 -->
+<h1 onclick="changeText(this)">Click here!</h1>
+<!-- 3 event attribute-->
+<button onclick="displayDate()">What is the time is?</button>
+<p id="demo4"></p>
+<!-- 4 -->
+<button id="myBtn2">Display Date</button>
+<!-- 5 mouse over -->
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+<p id="demo5"></p>
+<br>
+
+<br>
+<h3>TOPIC 5: EVENT LISTENER</h3>
+<!-- 1 -->
+<h2>JavaScript addEventListener()</h2>
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="myBtn3">Display Date</button>
+<p id="demo6"></p>
+<!-- 2 Event handler-->
+<button id="myBtn4">Alert: Whats Up!</button>
+<!-- 3 Event handler -->
+<p>This example uses the addEventListener() method to add many events on the same button.</p>
+<button id="myBtn5">Many events!</button>
+<p id="demo7"></p>
+<!-- Add an Event Handler to the window Object -->
+<!-- Passing Parameters -->
+<p>This example demonstrates how to pass parameter values when using the addEventListener() method.</p>
+<p>Click the button to perform a calculation.</p>
+
+<button id="myBtn6">Calculate</button>
+<p id="demo8"></p>
+<!-- The removeEventListener() method -->
+<h2>JavaScript removeEventListener()</h2>
+
+<div id="myDIV">
+  <p>This div element has an onmousemove event handler that displays a random number every time you move your mouse inside this orange field.</p>
+  <p>Click the button to remove the div's event handler.</p>
+  <button onclick="removeHandler()" id="myBtn7">Remove</button>
+</div>
+
+<p id="demo9"></p>
+<br>
+<h3>TOPIC 6: NAVIGATION</h3>
+
+<!-- Node Relationships
+The nodes in the node tree have a hierarchical relationship to each other.
+
+The terms parent, child, and sibling are used to describe the relationships.
+
+In a node tree, the top node is called the root (or root node)
+Every node has exactly one parent, except the root (which has no parent)
+A node can have a number of children
+Siblings (brothers or sisters) are nodes with the same parent 
+You can use the following node properties to navigate between nodes with JavaScript -->
+
+<h3>Child Nodes and Node Values</h3>
+<p>retrieves the text of an h1 element and copies it into a p element:</p>
+<!-- use the innerHTML property to retrieve the content of an HTML element. -->
+<h1 id="id01">My First Navigation</h1>
+<p id="id02"></p>
+<h3>DOM Root Nodes</h3>
+<p>This example demonstrates the <b>document.documentElement</b> property.</p>
+
+<h3>The nodeName Property</h3> 
+<!-- YOU CAN ALSO DO TYPE -->
+<h1 id="id03">This is inside an H1</h1>
+<p id="id04"></p>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+    
